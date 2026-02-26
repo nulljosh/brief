@@ -1,6 +1,8 @@
 import 'animate.css';
 import './style.css';
-import './components.css';
+import './hero.css';
+import './results.css';
+import './layout.css';
 import { analyzeCase } from './analysis.js';
 import { renderResults, renderLoading } from './ui.js';
 

@@ -1,4 +1,4 @@
-# Law AI -- Claude Instructions
+# Brief -- Claude Instructions
 
 ## Design System
 

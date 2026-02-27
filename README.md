@@ -1,6 +1,6 @@
-# Law AI
+# Brief
 
-A legal case analyzer. Splash page with a large text input where users describe their complaint in plain language, and AI analyzes whether they have a viable legal case.
+Legal case analyzer. Describe a complaint in plain language, and the analysis engine scores case viability, identifies legal issues, and suggests next steps.
 
 ## Architecture
 
@@ -62,7 +62,7 @@ User describes situation -> Analysis Engine -> Structured Results
 ## Project Structure
 
 ```
-law-ai/
+brief/
   index.html          Entry point (textarea + results shell)
   package.json        Vite 7 + animate.css
   src/

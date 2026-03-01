@@ -1,6 +1,12 @@
+<div align="center">
+
 # Brief
 
+<img src="icon.svg" alt="Brief" width="120" />
+
 Legal case analyzer. Describe a complaint in plain language, and the analysis engine scores case viability, identifies legal issues, and suggests next steps.
+
+</div>
 
 ## Architecture
 

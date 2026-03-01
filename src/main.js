@@ -34,14 +34,23 @@ analyzeBtn.addEventListener('click', async () => {
     'animate__fadeOutUp'
   );
 
-  const data = await analyzeCase(text);
+  try {
+    const data = await analyzeCase(text);
 
-  inputSection.classList.add('hidden');
-  resultsSection.innerHTML = renderResults(data);
+    inputSection.classList.add('hidden');
+    resultsSection.innerHTML = renderResults(data);
 
-  const resetBtn = document.getElementById('reset-btn');
-  if (resetBtn) {
-    resetBtn.addEventListener('click', reset);
+    const resetBtn = document.getElementById('reset-btn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', reset);
+    }
+  } catch (err) {
+    resultsSection.innerHTML = `<div class="glass-card" style="text-align:center;color:var(--orange);">
+      <p>Analysis failed. Please try again.</p>
+      <button class="btn-secondary" id="reset-btn">Start Over</button>
+    </div>`;
+    const resetBtn = document.getElementById('reset-btn');
+    if (resetBtn) resetBtn.addEventListener('click', reset);
   }
 });
 

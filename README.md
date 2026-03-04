@@ -10,13 +10,7 @@ Legal case analyzer. Describe a complaint in plain language, and the analysis en
 
 ## Architecture
 
-```
-User Input → Analysis Engine → Structured Results
-    ↓              ↓                    ↓
-Textarea    Keyword detection    Strength gauge
-           Area matching        Legal issues
-           Strength scoring     Recommended steps
-```
+![Architecture](architecture.svg)
 
 ## Stack
 
